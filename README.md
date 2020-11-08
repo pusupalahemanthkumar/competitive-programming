@@ -51,5 +51,5 @@ For eg. our algorithm has a complexity of O(n^2) and n <= 10^6. Substituting n y
 
 **TimeComplexity Analysis of Sorting Algorithms**
 
-![alt TimeComplexity][images/sorting.png]
+![alt TimeComplexity](images/sorting.png)
 
