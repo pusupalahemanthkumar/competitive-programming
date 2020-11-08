@@ -50,4 +50,6 @@ For eg. our algorithm has a complexity of O(n^2) and n <= 10^6. Substituting n y
 - [Codechef DSA week 1](https://www.codechef.com/LRNDSA01?order=desc&sortBy=successful_submissions)
 
 **TimeComplexity Analysis of Sorting Algorithms**
-![alt text][https://he-s3.s3.amazonaws.com/media/uploads/c950295.png]
+
+![alt TimeComplexity][images/sorting.png]
+
