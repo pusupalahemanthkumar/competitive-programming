@@ -120,4 +120,7 @@ Going by the intuition, you would choose first A and then you are stuck with the
 
 **When the greedy method doesn’t work, we look forward to something called dynamic programming methods.**
 
-
+**More Problems (GreedyAlgo)**
+-[Tcs Codevita Railway Station Problem](https://droxelement.com/railway-station-codevita-solution-in-python/)
+-[Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)
+-[Job Sequencing Problem](https://www.geeksforgeeks.org/job-sequencing-problem/)
