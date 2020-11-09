@@ -95,3 +95,9 @@ To get the current sum of block of k elements just subtract the first element fr
 **Practice Question (Window Sliding Technique)**
 - [Question 1](https://www.codechef.com/LRNDSA02/problems/NOTALLFL)
 - [Question 2](https://www.geeksforgeeks.org/find-a-subarray-of-size-k-whose-sum-is-a-perfect-square/)
+
+### Greedy Algorithms
+
+A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment, without worrying about the future result it would bring. In other words, the locally best choices aim at producing globally best results.
+**This algorithm may not be the best option for all the problems. It may produce wrong results in some cases.**
+This algorithm never goes back to reverse the decision made. This algorithm works in a top-down approach.
