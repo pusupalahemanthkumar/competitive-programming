@@ -99,5 +99,25 @@ To get the current sum of block of k elements just subtract the first element fr
 ### Greedy Algorithms
 
 A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment, without worrying about the future result it would bring. In other words, the locally best choices aim at producing globally best results.
-**This algorithm may not be the best option for all the problems. It may produce wrong results in some cases.**
-This algorithm never goes back to reverse the decision made. This algorithm works in a top-down approach.
+
+> **This algorithm may not be the best option for all the problems. It may produce wrong results in some cases.**
+>This algorithm never goes back to reverse the decision made. This algorithm works in a top-down approach.
+
+#### Greedy Algorithm Introduction
+
+Let us say you want to visit a restaurant in a car from your home and there are 20 possible ‘paths’. When I say a path, I mean composed of many roads- each adjacent to the next. So on leaving your home, you’d encounter many junctions- from each, many roads split. Assume these junctions don’t have markers showing remaining distance to restaurant. Rather you know the length of all the roads from here. Indeed all individual roads. Let’s make things simpler. You know these lengths before leaving your home. Naturally you’d want to reach the restaurant using minimum fuel (or as soon as possible-however you want to see it). If you choose to minimize cost, it’d be same as taking path of minimum length. So all set, how should we proceed?
+
+The simplest method is compute all path lengths at home, and choose the one with minimum value. This is called brute force. The problem with such solutions is you have to waste a lot of your time and rough-sheets. It may not be a mighty task with 20 roads, but if you’d 20000 it won’t be simple anymore. So let’s do things quicker. Leave home without any calculations. When you encounter a junction with several roads, what would be your natural instinct? Say you see 5 of roads of length 1,4,20,100,200- which one would you choose? Unless you apply algorithms at every step of your life, you’d choose the road of length 1. If you’d been able to calculate using the minimum distance remaining to restaurant along this path (which unfortunately you don’t know), you’d have chosen the optimal path. However by choosing the path which at the moment seemed best you chose a suboptimal path. If you apply the same intuition at every junction, computer scientists would declare you used Greedy Algorithm to reach the restaurant. Simple, isn’t it? No need to calculate exhaustively all road lengths in advance, just minimum at a given junction. Reduces lots of wasteful computations.
+
+#### Greedy Algorithms When To Use
+Lets look at the path finding question we were looking at in the previous slide.
+
+Greed is not always good- you may end up with a non-optimal solution (using more fuel than you could have). This is the natural trade-off for being a short-term visionary rather than a long-term visionary. Let me give you an elementary example where it fails. See the following directed network:
+
+![alt greedyAlgo](images/greedyAlgo.png)
+
+Going by the intuition, you would choose first A and then you are stuck with the road of length 99. So you end up moving 100 units rather than a possible 10- had you visited B first, which did not seem attractive then. So greedy algorithm fails in this case. 
+
+**When the greedy method doesn’t work, we look forward to something called dynamic programming methods.**
+
+
