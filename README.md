@@ -120,6 +120,7 @@ Greed is not always good- you may end up with a non-optimal solution (using more
 Going by the intuition, you would choose first A and then you are stuck with the road of length 99. So you end up moving 100 units rather than a possible 10- had you visited B first, which did not seem attractive then. So greedy algorithm fails in this case.
 
 **When the greedy method doesn’t work, we look forward to something called dynamic programming methods.**
+![This problem can't be solved using greedy algo we need to use dynamic programming](https://www.codechef.com/problems/SUMTRIAN)
 
 **More Problems (GreedyAlgo)**
 
