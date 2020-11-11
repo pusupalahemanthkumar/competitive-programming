@@ -127,6 +127,7 @@ Going by the intuition, you would choose first A and then you are stuck with the
 - [Tcs Codevita Railway Station Problem](https://droxelement.com/railway-station-codevita-solution-in-python/)
 - [Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)
 - [Job Sequencing Problem](https://www.geeksforgeeks.org/job-sequencing-problem/)
+- [Minimum number of Coins](https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/)
 
 ### Recursion
 
