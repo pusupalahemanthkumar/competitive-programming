@@ -146,3 +146,13 @@ What if, instead of being able to climb 1 or 2 steps at a time, you could climb 
 
 ```
 **Above problem is asked by  TCS and Amazon**
+
+### Stacks
+Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+
+![alt stack](images/stack.png)
+
+**Practice Questions**
+- [CodeChef Question 1](https://www.codechef.com/LRNDSA02/problems/COMPILER)
+- [CodeChef Question 2](https://www.codechef.com/LRNDSA02/problems/INPSTFIX)
+
