@@ -48,7 +48,7 @@ For eg. our algorithm has a complexity of O(n^2) and n <= 10^6. Substituting n y
 - [Intro To Algorithm Analysis](https://drive.google.com/file/d/0B-W-TWxgtybGd3dFUzg1OHNsM2M/view)
 - [MCQS on TimeComplexity Analysis](https://discuss.codechef.com/t/multiple-choice-questions-related-to-testing-knowledge-about-time-and-space-complexity-of-a-program/17976)
 - [Codechef DSA week 1](https://www.codechef.com/LRNDSA01?order=desc&sortBy=successful_submissions)
--  [HackerRank WarmUp Challenges](https://www.hackerrank.com/interview/interview-preparation-kit/warmup/challenges)
+- [HackerRank WarmUp Challenges](https://www.hackerrank.com/interview/interview-preparation-kit/warmup/challenges)
 
 **TimeComplexity Analysis of Sorting Algorithms**
 
@@ -132,6 +132,7 @@ Going by the intuition, you would choose first A and then you are stuck with the
 The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function. Using recursive algorithm, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
 #### Below Problem can be solved using recursion easily
+
 ```
 There's a staircase with N steps, and you can climb 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase. The order of the steps matters.
 
@@ -145,14 +146,39 @@ For example, if N is 4, then there are 5 unique ways:
 What if, instead of being able to climb 1 or 2 steps at a time, you could climb any number from a set of positive integers X? For example, if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time. Generalize your function to take in X.
 
 ```
-**Above problem is asked by  TCS and Amazon**
+
+**Above problem is asked by TCS and Amazon**
 
 ### Stacks
+
 Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
 
 ![alt stack](images/stack.png)
 
+#### Infix to Postfix Algorithm
+
+```
+1. Scan the infix expression from left to right.
+2. If the scanned character is an operand, output it.
+3. Else,
+      1 If the precedence of the scanned operator is greater than the precedence of the operator in the stack(or the stack is empty           or the stack contains a ‘(‘ ), push it.
+      2 Else, Pop all the operators from the stack which are greater than or equal to in precedence than that of the scanned operator. After doing that Push the scanned operator to the stack. (If you encounter parenthesis while popping then stop there and push the scanned operator in the stack.)
+4. If the scanned character is an ‘(‘, push it to the stack.
+5. If the scanned character is an ‘)’, pop the stack and and output it until a ‘(‘ is encountered, and discard both the parenthesis.
+6. Repeat steps 2-6 until infix expression is scanned.
+7. Print the output
+8. Pop and output from the stack until it is not empty.
+```
+
+#### Infix to Prefix Algorithm
+
+```
+Step 1: Reverse the infix expression i.e A+B*C will become C*B+A. Note while reversing each ‘(‘ will become ‘)’ and each ‘)’ becomes ‘(‘.
+Step 2: Obtain the postfix expression of the modified expression i.e CB*A+.
+Step 3: Reverse the postfix expression. Hence in our example prefix is +A*BC.
+```
+
 **Practice Questions**
+
 - [CodeChef Question 1](https://www.codechef.com/LRNDSA02/problems/COMPILER)
 - [CodeChef Question 2](https://www.codechef.com/LRNDSA02/problems/INPSTFIX)
-
