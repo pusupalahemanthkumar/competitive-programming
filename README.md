@@ -96,6 +96,9 @@ To get the current sum of block of k elements just subtract the first element fr
 - [Question 1](https://www.codechef.com/LRNDSA02/problems/NOTALLFL)
 - [Question 2](https://www.geeksforgeeks.org/find-a-subarray-of-size-k-whose-sum-is-a-perfect-square/)
 
+**More Problems**
+- [Window Sliding Technique](https://www.techiedelight.com/sliding-window-problems/)
+
 ### Greedy Algorithms
 
 A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment, without worrying about the future result it would bring. In other words, the locally best choices aim at producing globally best results.
@@ -179,8 +182,20 @@ Step 1: Reverse the infix expression i.e A+B*C will become C*B+A. Note while rev
 Step 2: Obtain the postfix expression of the modified expression i.e CB*A+.
 Step 3: Reverse the postfix expression. Hence in our example prefix is +A*BC.
 ```
+#### Evaluation of Postfix Expression
+```
+1) Create a stack to store operands (or values).
+2) Scan the given expression and do following for every scanned element.
+…..a) If the element is a number, push it into the stack
+…..b) If the element is a operator, pop operands for the operator from stack. Evaluate the operator and push the result back to the stack
+3) When the expression is ended, the number in the stack is the final answer
+```
 
 **Practice Questions**
 
 - [CodeChef Question 1](https://www.codechef.com/LRNDSA02/problems/COMPILER)
-- [CodeChef Question 2](https://www.codechef.com/LRNDSA02/problems/INPSTFIX)
+- [CodeChef Question 2(infix to postfix)](https://www.codechef.com/LRNDSA02/problems/INPSTFIX)
+- [Infix to prefix][https://www.geeksforgeeks.org/convert-infix-prefix-notation/]
+- [Evaluation of Postfix Expression](https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/)
+- [Balanced parentheses](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
+
