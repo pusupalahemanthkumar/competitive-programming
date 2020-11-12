@@ -96,6 +96,7 @@ To get the current sum of block of k elements just subtract the first element fr
 - [NOTALLFL CodeChef](https://www.codechef.com/LRNDSA02/problems/NOTALLFL)
 - [Subarray-k-perfect](https://www.geeksforgeeks.org/find-a-subarray-of-size-k-whose-sum-is-a-perfect-square/)
 - [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+- [Subarray with given sum](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0)
 
 **More Problems**
 - [Window Sliding Technique](https://www.techiedelight.com/sliding-window-problems/)
