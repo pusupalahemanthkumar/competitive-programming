@@ -93,8 +93,9 @@ To get the current sum of block of k elements just subtract the first element fr
 
 **Practice Question (Window Sliding Technique)**
 
-- [Question 1](https://www.codechef.com/LRNDSA02/problems/NOTALLFL)
-- [Question 2](https://www.geeksforgeeks.org/find-a-subarray-of-size-k-whose-sum-is-a-perfect-square/)
+- [NOTALLFL CodeChef](https://www.codechef.com/LRNDSA02/problems/NOTALLFL)
+- [Subarray-k-perfect](https://www.geeksforgeeks.org/find-a-subarray-of-size-k-whose-sum-is-a-perfect-square/)
+- [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 
 **More Problems**
 - [Window Sliding Technique](https://www.techiedelight.com/sliding-window-problems/)
@@ -195,7 +196,7 @@ Step 3: Reverse the postfix expression. Hence in our example prefix is +A*BC.
 
 - [CodeChef Question 1](https://www.codechef.com/LRNDSA02/problems/COMPILER)
 - [CodeChef Question 2(infix to postfix)](https://www.codechef.com/LRNDSA02/problems/INPSTFIX)
-- [Infix to prefix][https://www.geeksforgeeks.org/convert-infix-prefix-notation/]
+- [Infix to prefix](https://www.geeksforgeeks.org/convert-infix-prefix-notation/)
 - [Evaluation of Postfix Expression](https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/)
 - [Balanced parentheses](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
 
