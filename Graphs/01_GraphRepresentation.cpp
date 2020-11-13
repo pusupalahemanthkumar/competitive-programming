@@ -1,4 +1,4 @@
-/* Graph Respresentation Using  STL C++ */
+/* Graph Respresentation Using  STL C++  (Adjacent Link ) */
 
 #include<bits/stdc++.h>
 using namespace std;
