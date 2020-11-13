@@ -10,16 +10,20 @@ void addEdge(vector<int> adj[], int u, int v)
     adj[v].push_back(u); 
 } 
 
-
-
 void printGraph(vector<int> adj[], int V) 
 { 
     for (int v = 0; v < V; ++v) 
     { 
         cout << "\n Adjacency list of vertex "
              << v << "\n head "; 
-        for (auto x : adj[v]) 
-           cout << "-> " << x; 
+             
+        //for (auto x : adj[v]) 
+        //  cout << "-> " << x; 
+        
+          for(int i=0;i<adj[v].size();i++){
+          	cout<<" ->"<<adj[v][i];
+		  }
+		  
         printf("\n"); 
     } 
 } 
