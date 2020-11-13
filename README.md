@@ -99,6 +99,7 @@ To get the current sum of block of k elements just subtract the first element fr
 - [Subarray with given sum](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0)
 
 **More Problems**
+
 - [Window Sliding Technique](https://www.techiedelight.com/sliding-window-problems/)
 
 ### Greedy Algorithms
@@ -125,6 +126,7 @@ Greed is not always good- you may end up with a non-optimal solution (using more
 Going by the intuition, you would choose first A and then you are stuck with the road of length 99. So you end up moving 100 units rather than a possible 10- had you visited B first, which did not seem attractive then. So greedy algorithm fails in this case.
 
 **When the greedy method doesn’t work, we look forward to something called dynamic programming methods.**
+
 - [This problem can't be solved using greedy algo we need to use dynamic programming](https://www.codechef.com/problems/SUMTRIAN)
 
 **More Problems (GreedyAlgo)**
@@ -184,7 +186,9 @@ Step 1: Reverse the infix expression i.e A+B*C will become C*B+A. Note while rev
 Step 2: Obtain the postfix expression of the modified expression i.e CB*A+.
 Step 3: Reverse the postfix expression. Hence in our example prefix is +A*BC.
 ```
+
 #### Evaluation of Postfix Expression
+
 ```
 1) Create a stack to store operands (or values).
 2) Scan the given expression and do following for every scanned element.
@@ -201,22 +205,24 @@ Step 3: Reverse the postfix expression. Hence in our example prefix is +A*BC.
 - [Evaluation of Postfix Expression](https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/)
 - [Balanced parentheses](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
 
-
 ### Graphs
 
 A graph is a data structure that consists of the following two components:
+
 1. A finite set of vertices also called as nodes.
 2. A finite set of ordered pair of the form (u, v) called as edge. The pair is ordered because (u, v) is not the same as (v, u) in case of a directed graph(di-graph). The pair of the form (u, v) indicates that there is an edge from vertex u to vertex v. The edges may contain weight/value/cost.
 
 ```
 A Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.
 ```
+
 ![alt graph](images/graph.png)
 
 The following two are the most commonly used representations of a graph.
+
 1. Adjacency Matrix
 2. Adjacency List
-There are other representations also like, Incidence Matrix and Incidence List. The choice of graph representation is situation-specific. It totally depends on the type of operations to be performed and ease of use.
+   There are other representations also like, Incidence Matrix and Incidence List. The choice of graph representation is situation-specific. It totally depends on the type of operations to be performed and ease of use.
 
 **Adjacency Matrix:**
 Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph. Let the 2D array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j. Adjacency matrix for undirected graph is always symmetric. Adjacency Matrix is also used to represent weighted graphs. If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.
@@ -230,5 +236,28 @@ An array of lists is used. The size of the array is equal to the number of verti
 
 ![alt listadjacency.png](images/listadjacency.png)
 
+### BFS Algorithm
+
+```
+In BFS, we start with a node.
+1) Create a queue and enqueue source into it.
+   Mark source as visited.
+2) While queue is not empty, do following
+    a) Dequeue a vertex from queue. Let this
+       be f.
+    b) Print f
+    c) Enqueue all not yet visited adjacent
+       of f and mark them visited.
+
+```
+![alt bfs](images/bfs.png)
+
+
+### DFS Algorithm
+```
+1. Create a recursive function that takes the index of node
+2. Mark the current node as visited and print the node.
+3. Traverse all the adjacent and unmarked nodes and call the recursive function with index of adjacent node.
+```
 
 
