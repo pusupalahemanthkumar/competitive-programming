@@ -136,6 +136,27 @@ Going by the intuition, you would choose first A and then you are stuck with the
 - [Job Sequencing Problem](https://www.geeksforgeeks.org/job-sequencing-problem/)
 - [Minimum number of Coins](https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/)
 
+
+### Fractional Knapsack Problem
+Given weights and values of n items, we need to put these items in a knapsack of capacity W to get the maximum total value in the knapsack.
+
+In the 0-1 Knapsack problem, we are not allowed to break items. We either take the whole item or don’t take it. 
+```
+Input: 
+Items as (value, weight) pairs 
+arr[] = {{60, 10}, {100, 20}, {120, 30}} 
+Knapsack Capacity, W = 50; 
+
+Output: 
+Maximum possible value = 240 
+by taking items of weight 10 and 20 kg and 2/3 fraction 
+of 30 kg. Hence total price will be 60+100+(2/3)(120) = 240
+```
+**In Fractional Knapsack, we can break items for maximizing the total value of knapsack. This problem in which we can break an item is also called the fractional knapsack problem. ***
+A brute-force solution would be to try all possible subset with all different fraction but that will be too much time taking. 
+
+An efficient solution is to use Greedy approach. The basic idea of the greedy approach is to calculate the ratio value/weight for each item and sort the item on basis of this ratio. Then take the item with the highest ratio and add them until we can’t add the next item as a whole and at the end add the next item as much as we can. Which will always be the optimal solution to this problem.
+
 ### Recursion
 
 The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function. Using recursive algorithm, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
