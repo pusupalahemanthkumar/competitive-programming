@@ -12,9 +12,9 @@ bool compare(Item a,Item b){
 }
 int knapscak(Item a[],int w,int n){
 	sort(a,a+n,compare);
-//	for(int i=0;i<n;i++){
-//		cout<<a[i].value<<" ";
-//	}
+	for(int i=0;i<n;i++){
+		cout<<a[i].value<<" ";
+	}
 	cout<<endl;
 	int res;
 	int curW=0;

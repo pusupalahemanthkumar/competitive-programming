@@ -16,6 +16,10 @@ bool compare(Item a,Item b){
 double fractionalKnapscak(Item a[],int w,int n){
 	//Sorting Item on basis of ratios
 	sort(a,a+n,compare);
+	for(int i=0;i<n;i++){
+		cout<<a[i].weight<<" "<<a[i].value<<endl;
+	}
+	cout<<endl;
 	int curW=0;
 	double finalValue=0.0;
 	for(int i=0;i<n;i++){
