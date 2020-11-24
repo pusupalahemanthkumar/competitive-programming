@@ -292,3 +292,43 @@ Dynamic Programming is mainly an optimization over plain recursion. Wherever we 
 ![alt dp](images/dp.png)
 
 
+Dynamic Programming is an algorithmic paradigm that solves a given complex problem by breaking it into subproblems and stores the results of subproblems to avoid computing the same results again. Following are the two main properties of a problem that suggests that the given problem can be solved using Dynamic programming.
+
+1) Overlapping Subproblems
+2) Optimal Substructure
+
+**1) Overlapping Subproblems:**
+
+Like Divide and Conquer, Dynamic Programming combines solutions to sub-problems. Dynamic Programming is mainly used when solutions of same subproblems are needed again and again. In dynamic programming, computed solutions to subproblems are stored in a table so that these don’t have to be recomputed. So Dynamic Programming is not useful when there are no common (overlapping) subproblems because there is no point storing the solutions if they are not needed again. For example, Binary Search doesn’t have common subproblems. If we take an example of following recursive program for Fibonacci Numbers, there are many subproblems which are solved again and again.
+
+
+```
+/* simple recursive program for Fibonacci numbers */
+int fib(int n) 
+{ 
+   if ( n <= 1 ) 
+      return n; 
+   return fib(n-1) + fib(n-2); 
+}
+
+```
+**Recursion tree for execution of fib(5)**
+```
+                          fib(5)
+                     /             \
+               fib(4)                fib(3)
+             /      \                /     \
+         fib(3)      fib(2)         fib(2)    fib(1)
+        /     \        /    \       /    \
+  fib(2)   fib(1)  fib(1) fib(0) fib(1) fib(0)
+  /    \
+fib(1) fib(0)
+
+```
+
+We can see that the function fib(3) is being called 2 times. If we would have stored the value of fib(3), then instead of computing it again, we could have reused the old stored value. There are following two different ways to store the values so that these values can be reused:
+a) Memoization (Top Down)
+b) Tabulation (Bottom Up)
+
+**Memoization and Tabulation program programs are present in dynamic programming folder**
+
