@@ -297,7 +297,7 @@ Dynamic Programming is an algorithmic paradigm that solves a given complex probl
 1) Overlapping Subproblems
 2) Optimal Substructure
 
-**1) Overlapping Subproblems:**
+#### 1) Overlapping Subproblems:
 
 Like Divide and Conquer, Dynamic Programming combines solutions to sub-problems. Dynamic Programming is mainly used when solutions of same subproblems are needed again and again. In dynamic programming, computed solutions to subproblems are stored in a table so that these don’t have to be recomputed. So Dynamic Programming is not useful when there are no common (overlapping) subproblems because there is no point storing the solutions if they are not needed again. For example, Binary Search doesn’t have common subproblems. If we take an example of following recursive program for Fibonacci Numbers, there are many subproblems which are solved again and again.
 
@@ -331,3 +331,8 @@ We can see that the function fib(3) is being called 2 times. If we would have st
 
 **Memoization and Tabulation program programs are present in dynamic programming folder**
 
+#### 2) Optimal Substructure :
+
+A problem has an optimal substructure if its optimal solution can be constructed from the optimal solutions of its subproblems.
+
+**Refer 0/1 Knapscak problem  using DP**
