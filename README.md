@@ -323,12 +323,11 @@ int fib(int n)
   fib(2)   fib(1)  fib(1) fib(0) fib(1) fib(0)
   /    \
 fib(1) fib(0)
-
 ```
 
 We can see that the function fib(3) is being called 2 times. If we would have stored the value of fib(3), then instead of computing it again, we could have reused the old stored value. There are following two different ways to store the values so that these values can be reused:
-a) Memoization (Top Down)
-b) Tabulation (Bottom Up)
+> a) Memoization (Top Down)
+> b) Tabulation (Bottom Up)
 
 **Memoization and Tabulation program programs are present in dynamic programming folder**
 
